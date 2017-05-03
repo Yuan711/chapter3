@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>My Notebook</title>
+    <title>招商银行FinTech精英训练营</title>
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -17,7 +17,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand">My Notebook</a>
+          <a class="navbar-brand">招商银行FinTech精英训练营</a>
         </div>
       </div>
     </nav>
@@ -27,10 +27,10 @@
         <div class="col-sm-3">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title"><button class="btn btn-primary btn-xs pull-right" ng-click="create()">New</button> My Notes</h3>
+              <h3 class="panel-title"><button class="btn btn-primary btn-xs pull-right" ng-click="create()">新建</button>题目</h3>
             </div>
             <div class="panel-body">
-              <p ng-if="!notes.length">No notes</p>
+              <p ng-if="!notes.length">笔记为空</p>
               <ul class="list-group">
                 <li class="list-group-item" ng-repeat="note in notes" ng-click="view($index)" ng-class="{active: note.id == content.id}">{{note.title}}<br />
                 <small>{{note.date | date:'short'}}</small></li>
